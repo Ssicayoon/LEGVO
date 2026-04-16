@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legvo"
+version = "0.1.0"
+description = "LEGVO: verification of LLM-generated code optimizations via polyhedral and e-graph methods"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["islpy>=0.23"]
+
+[project.scripts]
+legvo-polyhedral = "legvo.polyhedral.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

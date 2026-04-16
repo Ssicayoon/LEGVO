@@ -1,0 +1,3 @@
+cov[i][j] += data[k][i] * data[k][j];
+...
+cov[i][j] /= (float_n - SCALAR_VAL(1.0));

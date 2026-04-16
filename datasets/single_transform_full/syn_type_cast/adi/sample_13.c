@@ -1,0 +1,1 @@
+  b = (DATA_TYPE)SCALAR_VAL(1.0)+mul1;

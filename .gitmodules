@@ -1,0 +1,3 @@
+[submodule "egglog-experimental"]
+	path = egglog-experimental
+	url = https://github.com/egraphs-good/egglog-experimental.git

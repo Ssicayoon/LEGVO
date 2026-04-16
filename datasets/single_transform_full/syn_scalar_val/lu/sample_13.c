@@ -1,0 +1,1 @@
+(POLYBENCH_ARRAY(B))[r][s] = SCALAR_VAL(0.0);

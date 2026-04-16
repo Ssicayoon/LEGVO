@@ -1,0 +1,2 @@
+temp = expr;
+array = temp;

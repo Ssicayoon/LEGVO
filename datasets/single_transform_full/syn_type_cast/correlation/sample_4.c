@@ -1,0 +1,1 @@
+  DATA_TYPE eps = SCALAR_VAL((DATA_TYPE)0.1);

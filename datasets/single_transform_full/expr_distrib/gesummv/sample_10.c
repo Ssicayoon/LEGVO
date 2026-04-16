@@ -1,0 +1,13 @@
+// Before:
+for (j = 0; j < _PB_N; j++) {
+    tmp[i] = A[i][j] * x[j] + tmp[i];
+    y[i] = B[i][j] * x[j] + y[i];
+}
+y[i] = alpha * tmp[i] + beta * y[i];
+
+// After (distribute beta into y loop):
+for (j = 0; j < _PB_N; j++) {
+    tmp[i] = A[i][j] * x[j] + tmp[i];
+    y[i] = beta * B[i][j] * x[j] + y[i];
+}
+y[i] = alpha * tmp[i] + y[i];

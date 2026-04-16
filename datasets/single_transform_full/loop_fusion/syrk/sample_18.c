@@ -1,0 +1,15 @@
+#pragma scop
+  for (i = 0; i < _PB_N; i++) {
+    for (k = 0; k < _PB_M; k++) {
+      if (k == 0) {
+        for (j = 0; j <= i; j++) {
+          C[i][j] *= beta;
+          C[i][j] += alpha * A[i][k] * A[j][k];
+        }
+      } else {
+        for (j = 0; j <= i; j++)
+          C[i][j] += alpha * A[i][k] * A[j][k];
+      }
+    }
+  }
+#pragma endscop

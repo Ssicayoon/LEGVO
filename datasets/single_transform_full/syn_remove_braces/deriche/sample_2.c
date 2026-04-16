@@ -1,0 +1,3 @@
+    for (i=0; i<_PB_W; i++) {
+        yp1 = SCALAR_VAL(0.0);
+        ...

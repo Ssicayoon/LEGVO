@@ -1,0 +1,3 @@
+for (k = 0; k < _PB_N; k++)
+  for (ij = 0; ij < _PB_N * _PB_N; ij++)
+    path[ij/_PB_N][ij%_PB_N] = ...

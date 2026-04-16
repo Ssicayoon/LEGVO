@@ -1,0 +1,1 @@
+  B1 = (DATA_TYPE)SCALAR_VAL(2.0);

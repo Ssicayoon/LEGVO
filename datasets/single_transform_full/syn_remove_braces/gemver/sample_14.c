@@ -1,0 +1,2 @@
+for (j = 0; j < n; j++)
+    A[i][j] = (DATA_TYPE) (i*j % n) / n;

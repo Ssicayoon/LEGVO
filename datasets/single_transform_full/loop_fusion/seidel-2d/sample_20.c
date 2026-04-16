@@ -1,0 +1,19 @@
+static
+void kernel_seidel_2d(int tsteps,
+		      int n,
+		      DATA_TYPE POLYBENCH_2D(A,N,N,n,n))
+{
+  int t, i, j, ij;
+  int inner = _PB_N - 2;
+
+#pragma scop
+  for (t = 0; t <= _PB_TSTEPS - 1; t++)
+    for (ij = 0; ij < inner * inner; ij++) {
+      i = ij / inner + 1;
+      j = ij % inner + 1;
+      A[i][j] = (A[i-1][j-1] + A[i-1][j] + A[i-1][j+1]
+		   + A[i][j-1] + A[i][j] + A[i][j+1]
+		   + A[i+1][j-1] + A[i+1][j] + A[i+1][j+1])/SCALAR_VAL(9.0);
+    }
+#pragma endscop
+}

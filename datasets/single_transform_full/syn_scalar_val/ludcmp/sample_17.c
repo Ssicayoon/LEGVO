@@ -1,0 +1,1 @@
+  DATA_TYPE w = SCALAR_VAL(0.0);

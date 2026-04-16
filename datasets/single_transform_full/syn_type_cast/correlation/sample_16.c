@@ -1,0 +1,1 @@
+  corr[_PB_M-(DATA_TYPE)1][_PB_M-(DATA_TYPE)1] = SCALAR_VAL(1.0);

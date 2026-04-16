@@ -1,0 +1,1 @@
+v[_PB_N-(DATA_TYPE)1][i] = SCALAR_VAL(1.0);

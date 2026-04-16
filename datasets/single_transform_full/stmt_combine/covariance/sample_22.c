@@ -1,0 +1,2 @@
+        cov[j][i] = cov[i][j] / (float_n - SCALAR_VAL(1.0));
+        cov[i][j] = cov[j][i];

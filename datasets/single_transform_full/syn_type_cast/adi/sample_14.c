@@ -1,0 +1,1 @@
+      p[i][0] = (DATA_TYPE)SCALAR_VAL(0.0);

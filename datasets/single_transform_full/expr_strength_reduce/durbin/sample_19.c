@@ -1,0 +1,10 @@
+y[0] = -r[0];          // no 2
+beta = 1.0;            // no 2  
+alpha = -r[0];         // no 2
+beta = (1-alpha*alpha)*beta;  // no explicit 2
+sum = 0.0;             // no 2
+sum += r[k-i-1]*y[i]; // no 2
+alpha = -(r[k]+sum)/beta;  // no 2
+z[i] = y[i] + alpha*y[k-i-1];  // no 2
+y[i] = z[i];          // no 2
+y[k] = alpha;          // no 2

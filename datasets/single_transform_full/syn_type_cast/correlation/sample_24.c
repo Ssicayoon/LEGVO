@@ -1,0 +1,1 @@
+DATA_TYPE eps = (DATA_TYPE)0.1;

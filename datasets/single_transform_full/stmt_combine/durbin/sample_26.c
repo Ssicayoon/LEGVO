@@ -1,0 +1,3 @@
+sum += r[k-i-1]*y[i];
+...
+alpha = - (r[k] + sum)/beta;

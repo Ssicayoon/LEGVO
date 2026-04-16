@@ -1,0 +1,4 @@
+tp1 = SCALAR_VAL(0.0);
+tp2 = SCALAR_VAL(0.0);
+yp1 = SCALAR_VAL(0.0);
+yp2 = SCALAR_VAL(0.0);
